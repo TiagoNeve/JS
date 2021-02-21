@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+<body>
+    Número 1: <input type="text" id="v1" value="0" /><br>
+    Número 2: <input type="text" id="v2" value="0" /><br>
+    Número 3: <input type="text" id="v3" value="0" /><br>
+    Número 4: <input type="text" id="v4" value="0" /><br>
+    <input type="button" value="Média" onclick="calc()" /><br>
+    Resultado: <input type="text" id="result" value="0" readonly />
+
+    <script type="text/javascript">
+        function calc() {
+            num1 = parseFloat(v1.value);
+            num2 = parseFloat(v2.value);
+            num3 = parseFloat(v3.value);
+            num4 = parseFloat(v4.value);
+            const op = 4;
+            media = 0;
+
+            media = (num1 + num2 + num3 + num4) / op;
+
+            result.value = parseFloat(media) ;
+        }
+    </script>
+</body>
+</html>

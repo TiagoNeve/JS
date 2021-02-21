@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+</head>
+<body>
+    <!--R = V / I-->
+    <header>
+        <div><h1>Descubra a resistência</h1></div>
+        <div>Tensão no sistema: <input type="text" id="tensao" value="0" /></div>
+        <div>Intensidade elétrica no sistema: <input type="text" id="intensidade" value="0" /></div>
+        <div><input type="button" value="Calcular" onclick="calc()" readonly></div>
+    </header>
+    <footer>
+        <div>A resistência é: <input type="text" id="resistencia" value="0" /></div>
+    </footer>
+
+    <script type="text/javascript">
+        function calc() {
+            voltagem = parseFloat(tensao.value);
+            corrente = parseFloat(intensidade.value);
+            resultado = 0;
+            
+            resultado = voltagem / corrente;
+            resistencia.value = resultado;
+        }
+
+    </script>
+</body>
+</html>
